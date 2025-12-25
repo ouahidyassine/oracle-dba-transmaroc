@@ -1,0 +1,11 @@
+alter session set container = PDB_TRANSMAROC;
+
+SELECT * FROM BILLETS ;
+
+
+
+SELECT * FROM paiements ;
+
+UPDATE PAIEMENTS SET MONTANT = 5000 WHERE ID_PAIEMENT= 1;
+COMMIT;
+
